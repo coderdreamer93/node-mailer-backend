@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  
+    "api/send-email": 
+    {
+      "src": "server.js",
+      "runtime": "nodejs14.x"
+    }
+  
+  }
