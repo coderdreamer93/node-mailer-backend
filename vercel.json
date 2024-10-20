@@ -1,10 +1,15 @@
 {
   "version": 2,
-  
-    "api/send-email": 
+  "builds": [
     {
       "src": "server.js",
-      "runtime": "nodejs14.x"
+      "use": "@vercel/node"
     }
-  
-  }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "server.js"
+    }
+  ]
+}
